@@ -70,6 +70,12 @@
                             <constraint firstItem="Ufu-5u-dbH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nXK-Rs-E0l"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="changeColorButton" destination="Ufu-5u-dbH" id="dHK-cm-f48"/>
+                        <outlet property="greenView" destination="b3Q-Mq-Rur" id="LO5-ct-YDR"/>
+                        <outlet property="redView" destination="Xjk-a6-P0W" id="YgO-Mr-fkJ"/>
+                        <outlet property="yellowView" destination="oJP-Im-y0d" id="DFh-O3-WX8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
