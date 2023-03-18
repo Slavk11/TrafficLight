@@ -23,6 +23,30 @@ class ViewController: UIViewController {
         
     }
 
-
+    @IBAction func changeColorButtonDidTapped() {
+        if yellowView.alpha < 1 && redView.alpha < 1 && greenView.alpha < 1 {
+            redView.alpha = 1
+        } else {
+            redView.alpha = 0.3
+        }
+        
+        if redView.alpha < 1 && greenView.alpha < 1 && yellowView.alpha < 1 {
+            yellowView.alpha = 1
+        } else {
+            yellowView.alpha = 0.3
+        }
+        
+        if yellowView.alpha < 1 && redView.alpha < 1 && greenView.alpha < 1 {
+            greenView.alpha = 1
+        } else {
+            greenView.alpha = 0.3
+        }
+        
+        if yellowView.alpha < 1 && greenView.alpha < 1 {
+            redView.alpha = 1
+        }
+        
+        changeColorButton.setTitle("Next", for: .normal)
+    }
 }
 

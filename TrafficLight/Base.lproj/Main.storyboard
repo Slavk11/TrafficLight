@@ -59,6 +59,9 @@
                                 <state key="normal" title="START">
                                     <color key="titleColor" red="0.96862745289999996" green="0.96078431610000004" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeColorButtonDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ri-n3-hfb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
