@@ -17,21 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufu-5u-dbH">
-                                <rect key="frame" x="66" y="488" width="188" height="60"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="188" id="Yw8-lx-GOt"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="START">
-                                    <color key="titleColor" red="0.96862745289999996" green="0.96078431610000004" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="startButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="KlC-CE-Xk3"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="4fS-sP-IBj">
                                 <rect key="frame" x="110" y="40" width="100" height="326"/>
                                 <subviews>
@@ -52,13 +37,26 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufu-5u-dbH">
+                                <rect key="frame" x="86" y="495" width="149" height="53"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="0.96862745289999996" green="0.96078431610000004" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="KlC-CE-Xk3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4fS-sP-IBj" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.573944" id="LW6-aW-7Sk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ufu-5u-dbH" secondAttribute="bottom" constant="20" id="P1D-Gk-cdm"/>
                             <constraint firstItem="4fS-sP-IBj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZUn-do-z0P"/>
-                            <constraint firstItem="Ufu-5u-dbH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-20" id="a3X-AU-RP1"/>
+                            <constraint firstItem="Ufu-5u-dbH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="149:568" id="i8T-J9-937"/>
                             <constraint firstItem="4fS-sP-IBj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="muk-a7-puH"/>
                             <constraint firstItem="Ufu-5u-dbH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qxG-qw-ILc"/>
                         </constraints>
